@@ -1,0 +1,22 @@
+{
+  "name": "crudDemo",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "divyasingh"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.6.6",
+    "bootstrap": "^3.3.7"
+  }
+}

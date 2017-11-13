@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+  <html ng-app="CrudDemoApp">
+          <head>
+            <title>Crud Demo App</title>
+            <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+          </head>
+            <body ng-controller="myCtrl">
+                <h2>CRUD operations</h2><br/>
+                    <div>
+                      <form>
+                        Idd: <input type="text" ng-model="idd"><br><br>
+                        Name: <input type="text" ng-model="name"><br><br>
+                        Family: <input type="text" ng-model="family"><br><br>
+                        continents: <input type="text" ng-model="continents"><br><br>
+                        Added: <input type="text" ng-model="added"><br><br>
+                        Visible: <input type="text" ng-model="visible"><br><br>
+                      </form>
+                      <button ng-click="get()">GET</button>
+                      <button ng-click="post()">SUBMIT</button>
+                      <button ng-click="put(name,family,continents)">UPDATE</button>
+                      <button ng-click="delete()">DELETE</button>
+                        <div ng-repeat="x in birdsapi.Data">
+                          {{ x.idd }}
+                          {{ x.name }}
+                          {{ x.family }}
+                            {{ x.continents}}
+                            {{ x.added }}
+                            {{ x.visible }}
+                        </div>
+                        </div>
+                
+              
+                       <script src="bower_components/angular/angular.min.js"></script>
+                       <script src="bower_components/angular-route/angular-route.min.js"></script>         
+                       <script src="bower_components/jquery/dist/jquery.min.js"></script>
+                       <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+                       <script src="partials/app.js"></script>
+                      
+            </body>
+</html>
